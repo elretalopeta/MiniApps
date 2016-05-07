@@ -1,0 +1,23 @@
+
+#brujula {
+	width: 100%;
+	height: 300px;
+	margin:20%;
+	display: none;
+   	background-image: url("../img/brujula.jpg");
+   	background-repeat: no-repeat;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+ }
+
+ #aguja {
+ 	height: 150px;
+ 	margin: 6.5% 0 0 3%;
+ 	 -webkit-transform: rotate0);
+    -moz-transform: rotate0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+ }

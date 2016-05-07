@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+
+    </style>
+
+    <script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+    <script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+    <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <section id="index" data-role="page">
+            <header data-role="header" data-position="fixed">
+                <h1>MiniApps (Pt05)</h1>
+            </header>
+
+    <div data-role="content">
+        <input type="button" value="Ejercicio 01" onClick="ejercicio01()" />
+        <input type="button" value="Ejercicio 02" onClick="ejercicio02()" />
+
+        <!-- Hace falta el movil para poder ver la diferencia -->
+        <input type="button" value="Ejercicio 03 (Hacer Foto)" onClick="ejercicio03()" />
+        <input type="button" value="Ejercicio 04 (Seleccionar Foto)" onClick="ejercicio04()" /> 
+
+        <input type="button" value="Ejercicio 05" onClick="ejercicio05()" />
+        <input type="button" value="Ejercicio 06" onClick="ejercicio06()" />
+
+        <input type="button" value="Ejercicio 07" onClick="ejercicio07()" />
+
+        <input type="button" value="Extra" onClick="extra()" />   
+
+    </div>
+
+        <footer data-role="footer">Eric Retamero</footer>
+
+    </section>
+
+      <section id="detalle" data-role="page">
+       <header data-role="header" data-position="fixed">
+         <a href="#" data-rel="back" class="ui-btn-left" id="return">Back</a>
+            <h1>MiniApps (Pt05)</h1>
+        </header>
+
+    <div id="result-ej03">
+        <div id="myImg03">
+            <input type="button" value="Añadir" onClick="ejercicio03()" /> 
+        </div>
+    </div>
+
+    <div id="result-ej04">
+        <div id="myImg04">
+            <input type="button" value="Añadir" onClick="ejercicio04()" /> 
+        </div>
+    </div>
+
+    <div id="brujula">
+          <img id="aguja" src = "img/aguja.png" />
+    </div>
+
+    <div id="info">
+
+         <div>Acelerometro</div>
+         <div id="infoz"></div>
+         <div id="infox"></div>  
+         <div id="infoy"></div>
+         <br/>
+        <div>Grado Rotacion Movil</div>
+         <div id="rotationx"></div>
+         <div id="rotationy"></div>  
+         <div id="rotationz"></div>
+    </div>
+
+
+        <footer data-role="footer">Eric Retamero</footer>
+    </section>
+
+</body>
+</html>
